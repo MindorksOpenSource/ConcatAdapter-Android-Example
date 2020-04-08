@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mindorks.example.mergeadapter.R
 import com.mindorks.example.mergeadapter.data.model.Banner
+import kotlinx.android.synthetic.main.item_layout_banner.view.*
 
 class BannerAdapter(
         private val banner: Banner
@@ -14,9 +15,9 @@ class BannerAdapter(
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: Banner) {
-            Glide.with(itemView.imageViewAd.context)
+            Glide.with(itemView.imageViewBanner.context)
                     .load(user.bannerImage)
-                    .into(itemView.imageViewAd)
+                    .into(itemView.imageViewBanner)
         }
     }
 
