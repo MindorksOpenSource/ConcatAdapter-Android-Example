@@ -1,4 +1,4 @@
-# Merge Adapter Android Example - An example project to demonstrate how to use Merge Adapter Android 
+# Merge Adapter Android Example - An example project to demonstrate how to use Merge Adapter in Android 
 [![MindOrks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
 [![MindOrks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 
@@ -8,7 +8,7 @@
 <br>
 
 ## About this Project  
-This project contains a sample app that shows how to use Merge Adapter in android to build recyclerview with different view types.  
+This project contains a sample app that shows how to use Merge Adapter in android to build recyclerView with different view types.  
 
 ## Step by Step guide  
 Reference blog for this project - [Implementing MergeAdapter In Android - Tutorial](https://blog.mindorks.com/implementing-merge-adapter-in-android-tutorial)
