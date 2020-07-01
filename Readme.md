@@ -3,7 +3,7 @@
 [![MindOrks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 
 <p align="center">
-    <img src="https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/merge-adapter-banner.png">
+    <img src="https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/merge-adpter-banner-be0494e1dabd7178.png">
 </p>
 <br>
 
