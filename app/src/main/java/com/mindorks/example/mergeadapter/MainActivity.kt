@@ -2,8 +2,8 @@ package com.mindorks.example.mergeadapter
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.MergeAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.mindorks.example.mergeadapter.adapter.BannerAdapter
 import com.mindorks.example.mergeadapter.adapter.MyDetailAdapter
@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var adapter: MergeAdapter
+    lateinit var adapter: ConcatAdapter
     lateinit var myDetailAdapter: MyDetailAdapter
     lateinit var userVerticalAdapter: UsersAdapter
     lateinit var bannerAdapter: BannerAdapter
@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         userVerticalAdapter = UsersAdapter(DataSource.getUser())
         bannerAdapter = BannerAdapter(DataSource.getBanner())
         myDetailAdapter = MyDetailAdapter(myDetail)
-        val listOfAdapters = listOf<RecyclerView.Adapter<out RecyclerView.ViewHolder>>(myDetailAdapter, userVerticalAdapter, bannerAdapter)
-        adapter = MergeAdapter(listOfAdapters)
+        val listOfAdapters = listOf(myDetailAdapter, userVerticalAdapter, bannerAdapter)
+        adapter = ConcatAdapter(listOfAdapters)
         recyclerView.adapter = adapter
 
     }
